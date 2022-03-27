@@ -36,7 +36,7 @@
                 }
             } else {
 
-                if (word[word.length - 1] === new newWord[0]) {
+                if (word[word.length - 1] === newWord[0]) {
                     word = newWord;
                     $word.textContent = word;
                     const order = Number($order.textContent);
@@ -46,7 +46,7 @@
                         $order.textContent = order + 1;
                     }
                 } else {
-
+                    alert('올바르지 않은 단어입니다!')
                 }
             }
         };
